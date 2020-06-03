@@ -21,7 +21,7 @@ public class LoginTest extends CommonMethods {
 
 		// DashboardPageElements dashboard = new DashboardPageElements();
 		test.info("Verifying valid username shows with welcome text");
-		String expectedUser = "Welcome Admins";
+		String expectedUser = "Welcome Admin";
 		String actualUser = dashboard.welcome.getText();
 		Assert.assertEquals(actualUser, expectedUser, "Admin is NOT Logged in");
 		Assert.assertTrue(actualUser.contains(ConfigsReader.getProperty("username")));
